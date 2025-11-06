@@ -11,7 +11,7 @@ const Hero = () => {
   useEffect(() => {
     let mounted = true;
     const img = new Image();
-    img.src = "/assets/background.jpg";
+    img.src = "/assets/il_600x600.4904002459_c7do.avif";
     img.onload = () => {
       if (mounted) setBgLoaded(true);
     };
@@ -36,7 +36,7 @@ const Hero = () => {
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-hero"
-      style={{ position: "relative", minHeight: '100vh' }}
+      style={{ position: "relative", minHeight: '110vh' }}
     >
       {/* Base background - bit dimmer */}
       <div
@@ -46,7 +46,7 @@ const Hero = () => {
           inset: 0,
           zIndex: 0,
           backgroundImage: bgLoaded
-            ? "url('/assets/background.jpg')"
+            ? "url('/assets/il_600x600.4904002459_c7do.avif')"
             : `url('${BLUR_BG}')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -65,7 +65,7 @@ const Hero = () => {
           position: "absolute",
           inset: 0,
           zIndex: 1,
-          backgroundImage: bgLoaded ? "url('/assets/background.jpg')" : `url('${BLUR_BG}')`,
+          backgroundImage: bgLoaded ? "url('/assets/il_600x600.4904002459_c7do.avif')" : `url('${BLUR_BG}')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -77,7 +77,7 @@ const Hero = () => {
       />
 
       {/* Centered Content Layout */}
-      <div className="relative z-10 w-full min-h-screen flex items-center">
+      <div className="relative z-10 w-full min-h-screen flex items-center pt-32">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-center text-center space-y-8 max-w-4xl mx-auto">
             {/* Main Heading */}
@@ -90,25 +90,15 @@ const Hero = () => {
                   textShadow: "0 4px 24px rgba(0,0,0,0.95), 0 1.5px 0 #000"
                 }}
               >
-                ROBOWORLD
+                Chessler Chess Club
               </div>
               <div className="text-2xl md:text-3xl lg:text-4xl text-secondary-foreground mt-2 cursor-default">
-                THE ROBOTICS CLUB OF JEC
+                If you begin to learn <i>The Chess</i> then this time will be perfect time to start <i>The Chess Game</i>. Because "Now or Never"
               </div>
             </h1>
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                asChild
-                size="lg"
-                className="bg-white/90 hover:bg-white/100 text-black hover:scale-105 transition-all duration-300"
-              >
-                <Link to="/members" className="flex items-center cursor-pointer">
-                  Meet Our Team
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
               <Button
                 asChild
                 size="lg"
@@ -120,7 +110,7 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Join Roboworld
+                  Join The Club
                 </Link>
               </Button>
             </div>

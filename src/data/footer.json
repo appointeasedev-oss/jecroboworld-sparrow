@@ -1,13 +1,13 @@
 {
   "logo": {
-    "image": "/assets/logo/logo_mini.png",
-    "alt": "JEC RoboWorld Logo",
-    "title": "JEC ROBOWORLD"
+    "image": "/assets/Chessler/OIP.webp",
+    "alt": "Chessler Chess Club Logo",
+    "title": "Chessler Chess Club"
   },
-  "description": "Robotics through innovation, education, and competitive excellence.",
+  "description": "If you begin to learn The Chess then this time will be perfect time to start The Chess Game. Because \"Now or Never\"",
   "contact": {
-    "address": "Jorhat Engineering College, Assam",
-    "email": "robowjec@gmail.com",
+    "address": "Jhotwara Industrial Area, Jaipur",
+    "email": "chesslerclub@gmail.com",
     "phone": "+91-8133970362"
   },
   "navigation": [
@@ -21,13 +21,13 @@
     { "name": "Timeline", "path": "/timeline" }
   ],
   "socialLinks": [
-    { "name": "Facebook", "url": "https://www.facebook.com/jecroboworld/", "icon": "facebook" },
-    { "name": "Instagram", "url": "https://www.instagram.com/roboworld_jec/", "icon": "instagram" },
-    { "name": "LinkedIn", "url": "https://www.linkedin.com/company/jec-roboworld/posts/?feedView=all", "icon": "linkedin" },
-    { "name": "Email", "url": "mailto:robowjec@gmail.com", "icon": "email" }
+    { "name": "Facebook", "url": "https://www.facebook.com/ChesslerClub/", "icon": "facebook" },
+    { "name": "Instagram", "url": "https://www.instagram.com/chessler_chess_club/", "icon": "instagram" },
+    { "name": "LinkedIn", "url": "https://in.linkedin.com/in/shubham-saini-070682118", "icon": "linkedin" },
+    { "name": "Email", "url": "mailto:chesslerclub@gmail.com", "icon": "email" }
   ],
   "copyright": {
-    "text": "JEC RoboWorld. All rights reserved.",
+    "text": "Chessler Chess Club. All rights reserved.",
     "showYear": true
   }
 }

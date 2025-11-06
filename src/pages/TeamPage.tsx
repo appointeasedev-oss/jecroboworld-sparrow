@@ -21,24 +21,22 @@ const TeamPage = () => {
   }, []);
 
   const currentMembers = members.filter(member => member.status === 'current');
-  const pastMembers = members.filter(member => member.status === 'alumni');
 
   return (
     <div className="pt-24 min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-            Our Team
+            Our Club Team
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-           Meet the amazing team behind jec roboworld !
+           Meet the innovative teams pushing the boundaries of chess technology
           </p>
         </div>
 
         {/* Current Members */}
         {currentMembers.length > 0 && (
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-foreground mb-8">Current Members</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {currentMembers.map((member) => (
                 <MemberCard
@@ -47,23 +45,6 @@ const TeamPage = () => {
                   role={member.role}
                   photo={member.photo}
                   isCurrent={true}
-                />
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Past Members */}
-        {pastMembers.length > 0 && (
-          <div>
-            <h2 className="text-3xl font-bold text-foreground mb-8">Past Members</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {pastMembers.map((member) => (
-                <MemberCard
-                  key={member.id}
-                  name={member.name}
-                  role={member.role}
-                  photo={member.photo}
                 />
               ))}
             </div>

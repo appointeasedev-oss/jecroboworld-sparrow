@@ -18,9 +18,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-6">
             <div className="flex items-center space-x-2 mb-4">
               <div className="p-2 rounded-lg bg-background/10">
-                <img src={footerData.logo.image} alt={footerData.logo.alt} className="h-10 w-10" />
+                <img src="/assets/Chessler/OIP.webp" alt="Chessler Chess Club" className="h-10 w-10" />
               </div>
-              <span className="text-xl font-bold">{footerData.logo.title}</span>
+              <span className="text-xl font-bold">Chessler Chess Club</span>
             </div>
             <p className=" mb-4 max-w-md">
               {footerData.description}
@@ -104,13 +104,13 @@ const Footer = () => {
             </span>
             <span>
               <a
-                href="https://www.linkedin.com/in/rkb16/"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm hover:text-[#2b9e9c] transition-colors no-underline"
-                aria-label="Rakib Hussain LinkedIn"
+                className="text-sm hover:text-[#FFA500] transition-colors no-underline"
+                aria-label="Sparrow AI Solutions"
               >
-                Developed by Rakib Hussain
+                Developed by Sparrow AI Solutions
               </a>
             </span>
           </p>
@@ -119,6 +119,5 @@ const Footer = () => {
     </footer>
   );
 };
-//some changes here
 
 export default Footer;

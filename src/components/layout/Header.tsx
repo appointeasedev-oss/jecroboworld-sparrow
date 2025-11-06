@@ -69,7 +69,7 @@ const Header = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  // Function to scroll to top when clicking JEC ROBOWORLD
+  // Function to scroll to top when clicking Chessler Chess Club
   const scrollToTop = () => {
     const lenis = (window as any).lenis;
 
@@ -84,7 +84,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-400 ease-out ${isVisible ? 'translate-y-0' : 'md:translate-y-0 -translate-y-full'
+      className={`fixed top-0 w-full z-50 transition-all duration-400 ease-out ${isVisible ? 'translate-y-0' : 'md:translate-y-0 -translate-y-full' 
         } ${isScrolled
           ? 'py-2 shadow-lg'
           : 'py-8 shadow-none'
@@ -113,15 +113,15 @@ const Header = () => {
               >
                 <div className="p-1">
                   <img
-                    src="/assets/logo/logo_mini.png"
-                    alt="RoboWorld Club"
+                    src="/assets/Chessler/OIP.webp"
+                    alt="Chessler Chess Club"
                     className={`transition-all duration-400 ${isScrolled ? 'h-6 w-6' : 'h-8 w-8'
                       }`}
                   />
                 </div>
                 <span className={`font-bold text-secondary-foreground whitespace-nowrap transition-all duration-400 ${isScrolled ? 'text-base' : 'text-lg'
                   }`}>
-                  JEC ROBOWORLD
+                  Chessler Chess Club
                 </span>
               </Link>
 
@@ -160,14 +160,14 @@ const Header = () => {
           >
             <div className="p-2">
               <img
-                src="/assets/logo/logo_mini.png"
-                alt="RoboWorld Club"
+                src="/assets/Chessler/OIP.webp"
+                alt="Chessler Chess Club"
                 className={`transition-all duration-400 ${isScrolled ? 'h-8 w-8' : 'h-10 w-10'
                   }`}
               />
             </div>
             <span className={`font-bold text-secondary-foreground transition-all duration-400 text-lg`}>
-              JEC ROBOWORLD
+              Chessler Chess Club
             </span>
           </Link>
 
